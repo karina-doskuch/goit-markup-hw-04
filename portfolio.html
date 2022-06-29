@@ -34,9 +34,17 @@
             </nav>
 
             <ul class="auth-nav">
-                <li class="logo-item auth-item"><a class="logo-address" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <li class="logo-item auth-item icon">
+                    <svg class="icon-email">
+                        <use href="images/svg-sprite.svg#icon-mail" width="16px" height="10px"></use>
+                    </svg>
+                    <a class="logo-address" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="logo-item auth-item"><a class="logo-address" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="logo-item auth-item icon">
+                    <svg class="icon-tel">
+                        <use href="images/svg-sprite.svg#icon-tel" width="16px" height="10px"></use>
+                    </svg>
+                    <a class="logo-address" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -157,8 +165,9 @@
     </main>
     <footer class="footer">
 
-        <div class="container">
-            <a class="link-logo link-accent" href="#"><span class="logo-accent">Web</span><span
+        <div class="container foo-container">
+            <div class="footer-box">
+                <a class="link-logo link-accent" href="#"><span class="logo-accent">Web</span><span
                     class="footer-logo">Studio</span></a>
 
             <address class="footer-address">
@@ -170,6 +179,48 @@
                     <li class="logo-item footer-tel"><a class="logo-address" href="tel:+380991111111">+38 099 111 11 11</a></li>
                 </ul>
             </address>
+            </div>
+
+            <div class="footer-content">
+                <h2 class="footer-header">Присоединяйтесь</h2>
+
+                <ul class="footer-actions">
+                    <li class="footer-icon">
+                        <a class="links-icon">
+                            <svg class="footer-svg">
+                                <use href="images/svg-sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="footer-icon">
+                        <a class="links-icon">
+                            <svg class="footer-svg">
+                                <use href="images/svg-sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="footer-icon">
+                        <a class="links-icon">
+                            <svg class="footer-svg">
+                                <use href="images/svg-sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="footer-icon">
+                        <a class="links-icon">
+                            <svg class="footer-svg">
+                                <use href="images/svg-sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            
         </div>
     </footer>
 </body>

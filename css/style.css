@@ -251,7 +251,7 @@ img {
 }
 
 .wrapper {
-    background: #2196F3;
+    background: var(--main-bg-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     color: #EEEEEE;
@@ -375,8 +375,8 @@ img {
 }
 
 .clients-item:hover {
-    color: #2196F3;
-    border-color: #2196F3;
+    color: var(--main-bg-color);
+    border-color: var(--main-bg-color);
     cursor: pointer;
 }
 
@@ -422,7 +422,7 @@ img {
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
-    background: #FFFFFF;
+    background: var(--color-white);
     padding: 20px 24px;
 }
 
@@ -495,7 +495,7 @@ img {
 
 .team-list {
     list-style: none;
-    background: #FFFFFF;
+    background: var(--color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;  
     text-align: center;
@@ -539,8 +539,8 @@ img {
 }
 
 .icon-link:hover {
-    background-color: #2196F3;
-    color: white;
+    background-color: var(--main-bg-color);
+    color: var(--color-white);
     cursor: pointer;
 }
 
@@ -579,6 +579,10 @@ img {
     padding-bottom: 60px;
 }
 
+.foo-container {
+    display: flex;
+}
+
 .link-accent {
     margin-bottom: 20px;
 }
@@ -610,15 +614,62 @@ img {
     margin-bottom: 0;
 }
 
-.footer-content {}
+/* .footer-content {
+   
+} */
 
-.footer-header {}
+.footer-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
 
-.footer-actions {}
+.footer-actions {
+    display: flex;
+    justify-content: center;
+    padding: 0 32px;
+    margin: 0;
+    list-style: none;
+    margin-left: 70px;
+}
 
-.footer-icon {}
+.footer-icon {
+    margin-right: 10px;
+}
 
-.footer-svg {}
+.footer-icon:nth-child(4) {
+    margin-right: 0;
+}
+
+.links-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--color-white);
+
+}
+
+.links-icon:hover {
+    background-color: var(--main-bg-color);
+    cursor: pointer;
+    color: var(--color-white);
+}
+
+.footer-svg {
+    width: 20px;
+    height: 16px;
+    fill: currentColor;
+}
 
 
 
